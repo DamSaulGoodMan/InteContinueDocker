@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "set DEBUG=projet:* & npm start",
-    "watch": "nodemon ./bin/www"
+    "watch": "nodemon ./bin/www",
+    "test": "mocha"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -16,6 +17,8 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.4.2"
   }
 }

@@ -1,18 +1,17 @@
 {
-  "name": "integration-projet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "projet",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "mocha"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "mocha": "^5.2.0",
-    "supertest": "^3.4.2"
+    "start": "node ./bin/www",
+    "dev": "set DEBUG=projet:* & npm start"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
   }
 }
